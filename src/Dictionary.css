@@ -1,0 +1,82 @@
+:root {
+  --dark-blue: #233142;
+  --med-blue: #455d7a;
+  --red: #f95959;
+  --lt-gray: #e3e3e3;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --font: "grenadine-mvb", sans-serif;
+}
+
+body {
+  background-color: var(--lt-gray);
+  font-family: var(--font);
+}
+
+h2,
+h3 {
+  font-weight: 800;
+}
+
+footer {
+  font-size: 12px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.container {
+  background-color: white;
+  margin: 30px auto;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.container.Dictionary {
+  background-color: var(--red);
+}
+
+.container.result {
+  padding: 20px 30px;
+}
+
+.container.main h2,
+.container.main p {
+  display: inline-block;
+}
+
+.type {
+  color: var(--red);
+}
+
+.example {
+  font-style: italic;
+  color: var(--med-blue);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.btn {
+  border-radius: 20px;
+  background-color: black;
+  border: none;
+  box-shadow: var(--box-shadow);
+}
+
+.btn:hover {
+  background-color: white;
+  color: var(--red);
+}
+
+#search {
+  border: 1px solid var(--lt-gray);
+  border-radius: 4px;
+  padding: 7px;
+  width: 80%;
+  margin-right: 5px;
+  box-shadow: var(--box-shadow);
+}

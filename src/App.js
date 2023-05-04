@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="app-header text-center mt-5">
+        <h1>
+          <strong>Dictionary</strong>
+        </h1>
       </header>
+      <div>
+        <main>
+          <Dictionary />
+        </main>
+      </div>
+      <footer className="footer text-center">
+        <p>
+          {" "}
+          Built by <span className="brand-name">Nicole Orbe</span> and lots of
+          <span className="footer-icon" role="img" aria-label="coffee">
+            ☕
+          </span>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/nicoleorbe/react-weatherapp"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://react-weatherapp.thenicoleorbe.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Netlify
+          </a>
+        </p>
+        <p>
+          Images from:
+          <a href="https://pixabay.com/">Pixabay</a>
+        </p>
+      </footer>
     </div>
   );
 }
