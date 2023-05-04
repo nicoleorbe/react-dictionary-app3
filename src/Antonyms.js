@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Antonyms(props) {
   return (
-    <div className="antonym">
+    <div className="antonym ps-5">
       <div>
         {props.data.map((word, index) => {
           if (index === 0) {

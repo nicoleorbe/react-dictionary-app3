@@ -8,7 +8,7 @@ export default function Images(props) {
           if (index < 6) {
             return (
               <div className="col-4" key={index}>
-                <a href={image.webformatURL} target="_blank">
+                <a href={image.webformatURL} target="_blank" rel="noreferrer">
                   <img
                     src={image.webformatURL}
                     alt=""

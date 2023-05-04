@@ -1,0 +1,35 @@
+.App footer {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin: 20px auto 10px;
+  font-size: 16px;
+}
+
+.App footer span {
+  display: inline-block;
+}
+.App .footer-dark {
+  color: white;
+}
+
+.App .footer-dark a {
+  color: #ff3cac;
+}
+
+.App .brand-name {
+  background: linear-gradient(-225deg, #ff057c 0%, #8d0b93 50%, #321575 100%);
+  color: white;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.App .brand-name:hover {
+  transform: scale(1.1);
+}
+.App .footer-icon {
+  font-size: larger;
+}
+
+.App .footer-icon:hover {
+  transform: scale(1.3);
+}
