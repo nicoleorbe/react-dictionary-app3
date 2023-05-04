@@ -7,6 +7,8 @@ export default function Antonyms(props) {
         {props.data.map((word, index) => {
           if (index === 0) {
             return <strong>opposite</strong>;
+          } else {
+            return null;
           }
         })}
       </div>

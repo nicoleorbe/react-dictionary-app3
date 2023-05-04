@@ -7,6 +7,8 @@ export default function Synonyms(props) {
         {props.data.map((word, index) => {
           if (index === 0) {
             return <strong>similar</strong>;
+          } else {
+            return null;
           }
         })}
       </div>
