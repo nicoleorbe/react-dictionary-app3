@@ -18,7 +18,7 @@ export default function Dictionary() {
       definition: response.data[0].meanings[0].definitions[0].definition,
       antonyms: response.data[0].meanings[0].antonyms,
       synonyms: response.data[0].meanings[0].synonyms,
-      additional: response.data[0].meanings,
+      additional: response.data[0].meanings
     });
   }
 
@@ -63,7 +63,6 @@ export default function Dictionary() {
           </form>
         </div>
         <WordSearch data={search} />
-        <Images data={images} />
       </div>
     );
   } else {
