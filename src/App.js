@@ -40,10 +40,6 @@ function App() {
             hosted on Netlify
           </a>
         </p>
-        <p>
-          Images from:
-          <a href="https://pixabay.com/">Pixabay</a>
-        </p>
       </footer>
     </div>
   );
