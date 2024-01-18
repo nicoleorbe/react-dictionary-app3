@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import "./Dictionary.css";
 import WordSearch from "./WordSearch";
-import Images from "./Images";
 import axios from "axios";
 
 export default function Dictionary() {
   const [search, setSearch] = useState({ ready: false });
-  const [images, setImages] = useState(null);
 
   function handleResponse(response) {
     setSearch({
@@ -20,10 +18,6 @@ export default function Dictionary() {
       synonyms: response.data[0].meanings[0].synonyms,
       additional: response.data[0].meanings
     });
-  }
-
-  function handleImageResponse(response) {
-    setImages(response.data.hits);
   }
 
   function handleSubmit(event) {
@@ -40,10 +34,6 @@ export default function Dictionary() {
   function urlSearch() {
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${search}`;
     axios.get(url).then(handleResponse);
-
-    let imgUrl = `https://pixabay.com/api/?key=36029855-4c738434be11b19682cb333f0&q=${search}&image_type=photo`;
-    axios.get(imgUrl).then(handleImageResponse);
-    // console.log(imgUrl);
   }
 
   if (search.ready) {
